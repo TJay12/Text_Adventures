@@ -1,0 +1,22 @@
+# Character Inventory Dictionary----------------------------------------------------------------------------------------
+inventory = {
+    "currency": {
+        "coins": 0
+    },
+    "materials": {
+        "twigs": 0,
+        "stones": 0,
+        "feathers": 0,
+        "small hides": 0,
+        "shellbug shells": 0
+    },
+    "consumables": {
+        "berries": 0,
+        "eggs": 0,
+    },
+    # "gear": {
+    #
+    # }
+}
+
+
