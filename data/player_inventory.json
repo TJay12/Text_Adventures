@@ -1,5 +1,4 @@
-# Character Inventory Dictionary----------------------------------------------------------------------------------------
-inventory = {
+{
     "currency": {
         "coins": 0
     },
@@ -12,11 +11,8 @@ inventory = {
     },
     "consumables": {
         "berries": 0,
-        "eggs": 0,
-    },
-    # "gear": {
-    #
-    # }
+        "eggs": 0
+    }
 }
 
 

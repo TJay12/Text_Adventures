@@ -1,0 +1,14 @@
+{
+  "berry bush": {
+    "berries": 3
+  },
+  "herb patch": {
+    "medicinal herbs": 2
+  },
+  "boulder": {
+    "stones": 2
+  },
+  "tree": {
+    "twigs": 5
+  }
+}
