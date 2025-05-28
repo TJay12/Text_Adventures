@@ -1,9 +1,10 @@
 {
     "level": 3,
-    "exp": 80.0,
+    "exp": 85.0,
     "next_level": 158,
-    "hp": 58.5,
+    "hp": 28.5,
     "max_hp": 120,
     "atk": 15,
-    "def": 6
+    "def": 6,
+    "name": "TJ"
 }

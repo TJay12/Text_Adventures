@@ -1,26 +1,25 @@
+from JSON_util import read_json, save_json
 from menus import menu
-import character
+from character import new_character_stats, new_character_inventory
 
-# new_character = input("Do you wish to start a new character (y/n): ").lower()
-# if new_character == "y":
-#     player_name = input("What is your name adventurer? ")
-#     print(f"Welcome to the game {player_name}, hope you enjoy your adventure")
-#
-#     # Begining stats
-#     player_level = 1
-#     player_current_exp = 0
-#     next_level = 30
-#     player_hp = 100
-#     player_max_hp = 100
-#     player_atk = 5
-#     player_def = 2
-#     player_current_coin = 0
-#     character.display_characters_stats(player_name)
-# else:
-#     player_name= input("What's your adventure's name? ")
-#     print(f"Welcome back {player_name}, hope you are enjoying your adventure")
-#     # Load character_stats logic here
+new_character = input("Do you wish to start a new character (y/n): ").lower()
+if new_character == "y":
+    data = new_character_stats
+    inventory = new_character_inventory
+    player_name = input("What is your name adventurer? ")
+    data['name'] = player_name
+    save_json("saved_character.json", data)
+    save_json("player_inventory.json", inventory)
+    print(f"Welcome to the game {player_name}, hope you enjoy your adventure")
+    menu(player_name)
 
-player_name = input("What is your name adventurer? ")
-print(f"Welcome to the game {player_name}, hope you enjoy your adventure")
-menu(player_name)
+elif new_character == "n":
+    data = read_json("saved_character.json")
+    player_name = data['name']
+    print(f"Welcome back {player_name}, hope you are enjoying your adventure")
+    menu(player_name)
+
+else:
+    print("Invalid Option")
+
+

@@ -19,7 +19,7 @@ def menu(player_name):
         #     shop_menu("biome")
         elif menu_choice == "q":
             print(f"Thanks for Playing! Hope you had fun today {player_name}")
-            break
+            return
         else:
             print("Invalid Option")
 
@@ -39,7 +39,7 @@ def character_menu(player_name):
         # elif menu_choice == "g":
         #     character.game_stats
         elif menu_choice == "e":
-            menu(player_name)
+            return
         else:
             print("Invalid Option")
 

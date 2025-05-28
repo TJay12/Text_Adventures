@@ -1,15 +1,15 @@
 {
     "currency": {
-        "coins": 115.0
+        "coins": 31.5
     },
     "materials": {
-        "twigs": 34,
-        "stones": 54,
-        "feathers": 40,
-        "small hides": 10,
-        "shellbug shells": 9,
-        "berries": 41,
-        "medicinal herbs": 29
+        "twigs": 2,
+        "stones": 2,
+        "feathers": 8,
+        "small hides": 4,
+        "shellbug shells": 1,
+        "berries": 12,
+        "medicinal herbs": 0
     },
     "consumables": {
         "berries": 0,
