@@ -2,6 +2,7 @@ import random
 import character
 import shop
 import encounters
+from JSON_util import read_json
 
 # ------------------------------------------------------------------------------------------------------   <---Menus--->
 # Main Menu ------------------------------------------------------------------------------------------------------------
@@ -64,9 +65,10 @@ def exploring(biome, player_name):
     explore_event = random.choice(["creature", "resource", "nothing"])
 
     if explore_event == "creature":
-        encounters.encounter_creature(biome, player_name)
-        print(
-            f"You now have {character.inventory["currency"]["coins"]} coins and {character.character_stats["exp"]} exp")
+        encounters.encounter_creature(player_name)
+        data = read_json("player_inventory.json")
+        ch_data = read_json("saved_character.json")
+        print(f"You now have {data["currency"]["coins"]} coins and {ch_data["exp"]} exp")
     elif explore_event == "resource":
         encounters.encounter_resource(biome)
     else:
