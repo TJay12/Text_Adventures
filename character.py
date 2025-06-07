@@ -12,26 +12,24 @@ new_character_stats = {
     "hp": 100,
     "max_hp": 100,
     "atk": 5,
-    "def": 2
-}
-
-# New Character Inventory Dictionary------------------------------------------------------------------------------------
-new_character_inventory = {
-    "currency": {
-        "coins": 0
-    },
-    "materials": {
-        "twigs": 0,
-        "stones": 0,
-        "feathers": 0,
-        "small hides": 0,
-        "shellbug shells": 0,
-        "berries": 5,
-        "medicinal herbs": 0
-    },
-    "consumables": {
-        "berries": 0,
-        "eggs": 0
+    "def": 2,
+    "inventory": {
+        "currency": {
+            "coins": 0
+        },
+        "materials": {
+            "twigs": 0,
+            "stones": 0,
+            "feathers": 0,
+            "small hides": 0,
+            "shellbug shells": 0,
+            "berries": 5,
+            "medicinal herbs": 0
+        },
+        "consumables": {
+            "berries": 0,
+            "eggs": 0
+        }
     }
 }
 
