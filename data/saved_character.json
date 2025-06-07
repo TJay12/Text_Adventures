@@ -1,4 +1,5 @@
 {
+    "name": "TJ",
     "level": 3,
     "exp": 85.0,
     "next_level": 158,
@@ -6,5 +7,22 @@
     "max_hp": 120,
     "atk": 15,
     "def": 6,
-    "name": "TJ"
+    "inventory": {
+        "currency": {
+            "coins": 0
+        },
+        "materials": {
+            "twigs": 0,
+            "stones": 0,
+            "feathers": 0,
+            "small hides": 0,
+            "shellbug shells": 0,
+            "berries": 5,
+            "medicinal herbs": 0
+        },
+        "consumables": {
+            "berries": 0,
+            "eggs": 0
+        }
+    }
 }
